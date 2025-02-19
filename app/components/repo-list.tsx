@@ -11,16 +11,16 @@ export default function RepoList({ repos }: RepoListProps) {
       <h2 className={styles.titleRepo}>Repositories</h2>
       <ul className={styles.repoList}>
         {repos.map((repo) => (
-          <>
-            <li key={repo.id} className={styles.repoItem}>
+          <div key={repo.id}>
+            <li className={styles.repoItem}>
               <Link href={repo.html_url} target="_blank">
                 {repo.name}
               </Link>
             </li>
-            <li>
+            <li className={styles.repoItem}>
               <ReadmeViewer content={repo.readme} />
             </li>
-          </>
+          </div>
         ))}
       </ul>
     </div>

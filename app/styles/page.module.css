@@ -45,6 +45,7 @@
 
 .userItem,
 .repoItem {
+  list-style: none;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -86,6 +87,7 @@
 
   .userItem,
   .repoItem {
+    list-style: none;
     flex-direction: row;
     align-items: center;
   }
@@ -106,6 +108,7 @@
 
   .userItem,
   .repoItem {
+    list-style: none;
     flex-direction: row;
     align-items: center;
   }
