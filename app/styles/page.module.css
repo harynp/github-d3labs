@@ -1,0 +1,112 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.form {
+  padding: 20px 0 20px 0;
+}
+
+.input {
+  padding: 0.625rem;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 400px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button {
+  padding: 0.625rem 1.25rem;
+  font-size: 1rem;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.loading {
+  font-size: 1rem;
+}
+
+.error {
+  color: red;
+}
+
+.userList {
+  list-style: none;
+  padding: 0;
+}
+
+.userItem,
+.repoItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.userImage {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.titleRepo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0 10px 0;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .input {
+    width: 90%;
+    max-width: none;
+  }
+
+  .button {
+    width: 90%;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .userItem,
+  .repoItem {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .titleRepo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .button {
+    width: 90%;
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .userItem,
+  .repoItem {
+    flex-direction: row;
+    align-items: center;
+  }
+}
